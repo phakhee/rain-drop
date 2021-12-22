@@ -3,7 +3,7 @@ import RainDrop from "./pages/RainDrop";
 
 function App() {
   return (
-      <RainDrop amount={100} />
+      <RainDrop />
   )
 }
 

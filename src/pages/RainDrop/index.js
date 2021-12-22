@@ -6,7 +6,7 @@ export const randomInteger = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-function RainDrop({amount}) {
+function RainDrop() {
     const [drops, setDrops] = useState([]);
 
     const addDrop = () => {
@@ -24,7 +24,7 @@ function RainDrop({amount}) {
     }, []);
 
     useEffect(() => {
-        if (drops.length !== amount * 2) addDrop();
+        if (drops.length !== 200) addDrop();
     }, [drops]);
 
     return (
