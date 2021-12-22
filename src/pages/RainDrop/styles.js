@@ -7,6 +7,7 @@ const rainDropAnimation = (endY) => keyframes`
   100% {
     top: ${endY}%;
     opacity: 0;
+    display: none;
   }
 `;
 
@@ -25,6 +26,6 @@ export const Drop = styled.div`
   position: absolute;
   top: -50px;
   left: ${props => props.beginX}%;
-  animation: ${props => rainDropAnimation(props.endY)} ${props => props.duration}s linear;
+  animation: ${props => rainDropAnimation(props.endY)} ${props => props.duration}s infinite;
   animation-delay: ${props => props.delay}s;
 `;
